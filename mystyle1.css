@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    height: 120px;
+    border-bottom:2px solid #B2BEB5;
+}
+.image
+{
+    grid-column:1/span -1;
+    border-radius: 50%;
+}
+.content{
+    display:inline-grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    white-space: nowrap;
+}
+.row{
+    display:flex;
+}
+.par{
+    padding-left: 10px;
+}
+.Body{
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    border-bottom:2px solid #B2BEB5;
+}
+.Footer{
+    display:flex;
+    flex-direction: column;
+    border-bottom:2px solid #B2BEB5;
+}
+.column1{
+    flex:70%;
+    padding-top: 100px;
+    height:300px;
+}
+.column2{
+    flex:30%;
+    padding-top: 200px;
+    height:300px;
+}
+.Book{
+    height: 200px;
+    padding: 10px;
+    border :2px solid #B2BEB5;
+}
+.rate{
+    padding-bottom: 10px;
+    display:flex;
+    flex-direction: row;
+}
+.date{
+    
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.chkin{
+    color: red;
+    border:2px solid black;
+    padding:10%;
+    
+}
+.num{
+    color:black;
+}
+.chkout{
+    color: red;
+    border:2px solid black;
+    padding:10%;
+    
+}
+.guests{
+    border:2px solid black;
+    display:flex;
+    flex-direction: column;
+}
+.GUEST{
+    font-weight: bold;
+}
+.book{
+    background-color: crimson;
+}
+.change{
+    padding:10px;
+    padding-left: 30%;
+}
+@media screen and (max-width:576px){
+    .column2{
+        display:none;
+    }
+}
